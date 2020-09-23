@@ -7,7 +7,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @pets = {:fishes => [], :dogs => [], :cats => []}
+    @pets = {:dogs => [], :cats => []}
   end
 
   def self.all
@@ -24,11 +24,6 @@ class Owner
 
   def say_species
      "I am a #{@species}."
-  end
-
-  def buy_fish(name)
-    fish = Fish.new(name)
-    @pets[:fishes] << fish
   end
 
   def buy_cat(name)
@@ -50,12 +45,6 @@ class Owner
   def play_with_cats
     @pets[:cats].each do |cat|
       cat.mood = "happy"
-    end
-  end
-
-  def feed_fish
-    @pets[:fishes].each do |fish|
-      fish.mood = "happy"
     end
   end
 
