@@ -47,7 +47,7 @@ class Owner
   def sell_pets
     all_pets = self.cats + self.dogs 
     all_pets.each do |pet| 
-      sell_pet(pet)
+      sell_pets(pet)
     end 
   end 
   
