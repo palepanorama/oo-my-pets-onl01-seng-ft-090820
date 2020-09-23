@@ -54,7 +54,7 @@ class Owner
     
     pets.each do |pet|
       pet.mood = "nervous"
-      pet.owner = nil 
+      pet.owner = 0 
     end 
   end
   
