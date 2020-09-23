@@ -10,7 +10,7 @@ class Owner
     @@all << self
     @cats = []
     @dogs = []
-    @pets = pets 
+    @pets = {dogs: [], cats:[]}
   end
 
   def self.all
