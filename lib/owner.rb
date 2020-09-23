@@ -50,8 +50,7 @@ class Owner
   end 
   
   def sell_pets
-    pets.each {|species, animals|}
-    
+    pets = self.dogs + self.cats 
   end
   
   def list_pets 
