@@ -44,14 +44,7 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
   
-  def sell_pets 
-    self.each do |species, animals|
-      animals.each do |animal|
-        animal.mood = nervous 
-      end 
-      animals.clear 
-    end 
-  end 
+
   
   def list_pets 
     dog_num = self.dogs.count
