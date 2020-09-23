@@ -45,8 +45,10 @@ class Owner
   end
   
   def sell_pets 
-    pet.owner = nil 
-    pet.mood = "nervous"
+    cat.owner = nil 
+    cat.mood = "nervous"
+    dog.owner = nil 
+    dog.mood = "nervous"
   end 
   
   def list_pets 
