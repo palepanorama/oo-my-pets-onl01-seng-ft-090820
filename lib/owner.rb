@@ -45,7 +45,10 @@ class Owner
   end
 
   def sell_pets
-    
+    all_pets = self.cats + self.dogs 
+    all_pets.each do |pet| 
+      sell_pet(pet)
+    end 
   end 
   
   def list_pets 
