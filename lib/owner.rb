@@ -44,6 +44,10 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
   
+  def pets 
+    
+  end 
+  
   def sell_pets
     pets.each do |pet, arr|
       arr.map do |pet|
