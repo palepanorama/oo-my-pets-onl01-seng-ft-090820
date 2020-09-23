@@ -50,10 +50,13 @@ class Owner
   end 
   
   def sell_pets
-    pets.to_a = x 
-    
-    
+    @pets.each do |type, name_array|
+      name_array.each do |pet|
+        pet.mood = "nervous"
+        
+      end 
     end
+    @pets = {}
   end
   
   def list_pets 
