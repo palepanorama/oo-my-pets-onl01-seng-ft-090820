@@ -58,7 +58,7 @@ class Owner
     @pets.clear
   end
 
-  def list_pets
+  def list_pets(name, mood)
     "I have #{@pets[:dogs].size} dog(s), and #{@pets[:cats].size} cat(s)."
   end
 
