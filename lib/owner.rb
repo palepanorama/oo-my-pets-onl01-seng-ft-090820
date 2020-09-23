@@ -45,7 +45,7 @@ class Owner
   end
   
   def pets 
-    
+    @@all 
   end 
   
   def sell_pets
