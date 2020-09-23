@@ -10,4 +10,8 @@ class Dog
     @@all << self 
     owner.dogs << self 
   end 
+  
+  def self.all 
+    @@all 
+  end 
 end
