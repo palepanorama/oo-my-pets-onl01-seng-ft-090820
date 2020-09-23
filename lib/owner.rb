@@ -32,9 +32,14 @@ class Owner
   end
 
   def buy_dog(name)
-    dog = Dog.new(name)
-    @pets[:dogs] << dog
-  end
+    Dog.all.detect do |d|
+      if d.name == name 
+        @pets[:dogs] << d 
+      else 
+        false 
+      end 
+    end 
+  end 
 
   def walk_dogs
     @pets[:dogs].each do |dog|
